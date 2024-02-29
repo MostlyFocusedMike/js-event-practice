@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="prefetch" href="https://images.pexels.com/photos/1402787/pexels-photo-1402787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+  <style>
+  </style>
+</head>
+<body>
+  <a href="/image.html">Image</a>
+  <p>To test this, turn on fast 3g (or slow, it's just already visible on fast) and disable cache in your chrome tools. That will knock out our ability to prefetch, and the image takes a noticeable amount of time to load. Then, go back home, enable cache and reload the home page. In the network, you can see the prefetch status. Once it's done, when you navigate to the image page, it's an instantaneous load with the page, there's no delay even when throttled.</p>
+
+  <p>Slightly unrelated, but <a href="https://developer.mozilla.org/en-US/docs/Web/API/PerformanceNavigationTiming">this PerformanceNavigationTiming api</a> shows you how all your dom loaded events fire, and how long they take. It's a good way to see how your page is loading, and if you have any bottlenecks.</p>
+</body>
+</html>
